@@ -1,0 +1,77 @@
+*{
+  --back--:orangered;
+  --color--:white;
+}
+
+button{
+  position: relative;
+  font-family: poppins;
+  overflow: hidden;
+  align-self: center;
+  justify-self: center;
+  padding: 10px;
+  border: 0;
+  box-shadow: 2px 2px 5px grey;
+  background-color: orangered;
+  color: white;
+  min-width: 150px;
+  border-radius: 15px;
+  text-align: center;
+
+}
+
+button .ripple{
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  transform: scale(0);
+  animation: ripple 0.6s linear;
+}
+
+@keyframes ripple{
+  to{
+    transform: scale(2.5);
+    opacity: 0;
+  }
+}
+body{
+  font-family: poppins;
+  overflow-x: hidden;
+}
+html,.wrapper{
+  overflow-x: hidden;
+}
+
+.App{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+input{    
+  border: 1px solid var(--back--);
+  border-radius: 15px;
+  text-align: center;
+  font-family: poppins;
+  font-size: medium;
+  padding: 10px 100px;
+}
+
+input:focus{
+  outline: 2px solid orange;
+}
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media(min-width:1000px)
+{
+  .btn,i{
+    cursor: pointer;
+  }
+}
+

@@ -1,0 +1,9 @@
+{
+  "short_name": "Task Manager React App",
+  "name": "Simple Task Manager React App",
+  "author" : "Eyuel Ketema",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

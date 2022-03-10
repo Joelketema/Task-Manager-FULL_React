@@ -1,0 +1,36 @@
+.choiceBtns{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.choiceBtns button{
+    background-color: white;
+    text-align: center;
+    color: black;
+    transition: all ease 250ms;
+}
+
+.choiceBtns button.active{
+    background-color: orangered;
+    color: white;
+}
+
+.choiceBtns button:nth-child(2),.choiceBtns button:nth-child(3){
+    margin-left: 50px;
+}
+
+@media(min-width:200px) and (max-width:500px)
+{
+    .choiceBtns button:nth-child(2),.choiceBtns button:nth-child(3){
+        
+        margin-left: 10px;
+    }
+    
+    .choiceBtns button{
+        padding: 5px;
+        min-width: 100px;
+    }
+
+}

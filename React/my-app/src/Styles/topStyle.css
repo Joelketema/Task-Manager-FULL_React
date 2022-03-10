@@ -1,0 +1,94 @@
+.head{
+    text-align: center;
+    color: orangered;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.userInput{
+    display: flex;
+}
+
+.userInput input{
+    
+    border: 1px solid var(--back--);
+    border-radius: 15px;
+    text-align: center;
+    font-family: poppins;
+    font-size: medium;
+    padding: 10px 100px;
+}
+
+select{
+    border: 1px solid var(--back--);
+    margin-left: 10px;
+    font-family: poppins;
+    background-color: var(--color--);
+
+}
+#icon{
+    margin-left: 10px;
+}
+.error{
+    justify-self: center;
+    align-self: center;
+    margin-top: 10px;
+}
+input:focus, select:focus{
+    outline: 2px solid orange;
+}
+
+.close{
+    position: relative;
+    left: -5%;
+    margin-top: 10px;
+    transition: all ease 200ms;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.close.active{
+    opacity: 1;
+    pointer-events: all;
+}
+
+#Create{
+    background-color: orangered;
+    margin-top: 30px;
+    color: white;
+}
+@media(min-width:200px) and (max-width:560px)
+{
+    .userInput{
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .userInput input{
+        width: 30%;
+    }
+
+   
+
+    select{
+        margin-top: 10px;
+        padding: 10px;
+        border-radius: 15px;
+    }
+
+    #Create{
+        padding: 5px;
+    }
+
+    .close{
+        margin-top: -30px;
+        left: 25%;
+        margin-bottom: 30px;
+    }
+
+}
